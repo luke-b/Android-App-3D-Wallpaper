@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.emirac.bonk"
+      android:versionCode="10"
+      android:versionName="2.3">
+      
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-feature android:name="android.software.live_wallpaper" />
+
+    <application 
+    	android:icon="@drawable/icon" 
+    	android:label="@string/app_name" 
+    	android:enabled="true" 
+    	android:debuggable="false">
+
+        <service android:label="@string/bonk_name" android:icon="@drawable/icon" android:name="com.steepmax.android.wallpapers.Wallpaper3dWallpaperService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/bonk" />
+        </service>
+
+        <activity
+            android:label="@string/preferences_label"
+            android:name="com.steepmax.android.wallpapers.BonkSettings"
+            android:theme="@android:style/Theme.Light.WallpaperSettings"
+            android:exported="true">
+            <intent-filter>
+             
+                <category android:name="android.intent.category.PREFERENCE" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest> 

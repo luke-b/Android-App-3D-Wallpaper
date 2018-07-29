@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string-array name="circleStyleNames">
+   <item>outline</item>
+   <item>solid</item>
+</string-array>
+<string-array name="circleStyles">
+   <item>0</item>
+   <item>1</item>
+</string-array>
+
+<string-array name="soundStyleNames">
+   <item>bonks!</item>
+   <item>dog barks</item>
+   <item>banjo</item>
+   <item>menagerie</item>
+</string-array>
+<string-array name="soundStyles">
+   <item>0</item>
+   <item>1</item>
+   <item>2</item>
+   <item>3</item>
+</string-array>
+
+<!--
+Each of these arrays is a sound style.  Each array consists of a set of sound
+ resources in res/raw.  The array is referenced in com.emirac.bonk.SoundManager.arrayIDs,
+ and the ordering there should correspond to the indeces in soundStyles above.
+ Within each style array below the resource items should be ordered treble to bass.
+ If there's only one item in the style array then the wallpaper will play the one
+ sound at various rates to create different pitches.  If there are multiple items then
+ the wallpaper will use each item as a discreet pitch (treble to bass).
+-->
+<array name="bonks">
+	<item>@raw/bonksound</item>
+</array>
+<array name="dogs">
+	<item>@raw/dog1</item>
+</array>
+<array name="banjo">
+	<item>@raw/banjo01</item>
+	<item>@raw/banjo02</item>
+	<item>@raw/banjo03</item>
+	<item>@raw/banjo04</item>
+	<item>@raw/banjo05</item>
+</array>
+<array name="menagerie">
+	<item>@raw/chicks</item>
+	<item>@raw/cricket2</item>
+	<item>@raw/chicken</item>
+	<item>@raw/birdatf2</item>
+	<item>@raw/lamb</item>
+	<item>@raw/owl</item>
+	<item>@raw/frog1</item>
+	<item>@raw/owl</item>
+	<item>@raw/cow</item>
+	<item>@raw/lion</item>
+	<item>@raw/snort</item>
+</array>
+
+</resources>

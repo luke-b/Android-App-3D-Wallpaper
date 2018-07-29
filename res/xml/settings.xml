@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        android:title="@string/bonk_settings">
+        <PreferenceCategory android:title="General">
+                <CheckBoxPreference
+                        android:title="Show Texts"
+                        android:summary="Show or Hide large texts"
+                        android:key="showCirclesPref" 
+                        android:defaultValue="true"
+                />
+                <CheckBoxPreference
+                		
+                        android:title="Show Search Lights"
+                        android:summary="Show or hide the two searchlights."
+                        android:key="trailsPref" 
+                        android:defaultValue="false"
+                />
+              
+        </PreferenceCategory>
+     
+</PreferenceScreen>
